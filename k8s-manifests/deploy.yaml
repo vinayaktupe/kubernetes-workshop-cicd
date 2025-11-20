@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: debasnan-dep1
+  name: debasnan-dep1
+  namespace: debu-project
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: debasnan-dep1
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: debasnan-dep1
+    spec:
+      containers:
+      - image: vinayaktupe/debasnanwebapp:latest
+        name: debasnanwebapp
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
