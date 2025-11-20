@@ -25,7 +25,7 @@ jobs:
         echo $TAG
         ls -a
         docker version
-        kubectl version
+        kubectl version --client
     #   # we can search some workflow on google and use it like given below 
     # - uses: mr-smithers-excellent/docker-build-push@v6
     #   name: Build & push Docker image
