@@ -1,5 +1,4 @@
 name: Docker Image CI
-# name of pipeline 
 # Now this  is github triggers 
 on:
   push:
